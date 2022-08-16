@@ -22,7 +22,7 @@ public class Main{
     if (matcherArabic.find() && matcherRoman.find() || !matcherOperand.find()) {    // Проверка на корректность ввода
       throw new IOException("Incorrect input");
     }
-    calc(in);
+    System.out.println(calc(in));
   }
 
   public static String calc(String input) throws IOException {
